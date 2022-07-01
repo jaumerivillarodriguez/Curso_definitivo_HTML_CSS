@@ -1,0 +1,25 @@
+body{
+    background-color:#2b304e;
+}
+
+h1{
+    color: #f17899;
+    text-align: center;
+}
+
+img{
+    height: 100px;
+    width: auto;
+}
+
+.productos{
+    color:#965a93;
+}
+
+.alimento{
+    color:#f6a4e0;
+}
+
+.enlaces{
+    color: #ec80be;
+}
