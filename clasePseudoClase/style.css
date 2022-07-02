@@ -1,0 +1,31 @@
+.main-nav{  /*de la clase main-nav*/
+    margin-top: 10px; 
+    list-style: none; /*quitamos los puntos de las listas desordenadas*/
+    padding-left: 0;
+    background-color: #13a4a4; /*color de fondo de nuestra lista desordenada*/
+}
+
+.main-nav__item{ /*los li*/
+    display: inline-block; /*Para que los elementos li se coloque en linea horizontal*/
+}
+
+.main-nav__item a{ /*todas las etiquetas a que esten dentro de la clase main-nav__item*/
+    color: white;
+    padding: 5px;
+    border-radius: 2px; /*redeondear los picos de las "cajas"*/
+    text-decoration: none;
+}
+
+/*Pseudo clases*/
+.main-nav__item a:hover{  /*Cuando el raton este por encima de los elementos*/
+    color:blue;
+}
+
+.main-nav__item a:active{ /*Cuando se hace click al elemento*/
+    color: red;
+}
+
+/*Pseudo elementos*/
+.main-nav__item a::after{ /*despues del elemento*/
+    content: " | "; /*agregale el siguiente contenido*/
+}
