@@ -1,0 +1,15 @@
+/* h2 + p { Aplicale el color rojo a todas las etiquetas parrafo que este cerca a un h2 Hermano cercano
+    color: red;
+} 
+
+h2 ~ p{
+    color:red;  Aplica el estilo siempre y cuando esten en la misma linea
+} 
+
+div > p{ La etiqueta parrafo que sea hija directa de una etiqueta div
+    color:red;
+}
+*/
+div  p{ /*Todas las etiquetas p que esten dentro de un div (mas habitual)*/
+    color:red;
+}
