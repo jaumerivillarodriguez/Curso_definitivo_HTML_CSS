@@ -1,0 +1,20 @@
+*{/*Elemento universal para reiniciar los valores y agregar box-sizing*/
+    box-sizing: border-box; /*se calcule automaticamente el tamaño del elemento con el padding y el border*/
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%
+}
+
+/*En todos los archivos Css esto sería una buena practica*/
+
+
+
+
+
+p{
+    font-size: 2.2rem; /*Rem su referencia es el html (html hereda por defecto 16px) , por lo tanto 1rem=16px siempre*/
+}
+
+/*Si ponemos el font-size de html en 62.5%, podemos saber cuanto vale nuestro rem en px . 1.6=16px , 2rem=20px, 2.2rem= 22px*/
