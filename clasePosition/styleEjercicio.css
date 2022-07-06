@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+.padre{
+    display: flex; /*La propiedad CSS flex es una propiedad resumida que indica la capacidad de un elemento flexible para alterar sus dimensiones y llenar el espacio disponible*/
+    align-items: center; /* Agrupa los elementos alrededor del centro */
+    justify-content: center;  /* Alinear items en el centro */
+    background-color: #2e1c2b;
+    border-color: black;  /*define el color de los cuatro bordes de un elemento.*/
+    border-style: solid; /*establece el estilo de línea para los cuatro lados del borde de un elemento (en este caso linea continua)*/
+    border-radius: 4rem; /*Agregua esquinas redondeadas */
+    margin: 5%; /*establece el margen para los cuatro lados*/
+    height: 60rem; /*establece la altura del elemento.*/
+    position: relative; 
+}
+/*Valores de position*/
+/*Static: Posición por defecto de los elementos, conservan la posición y espacio de donde son colocados (estáticos). No se puede usar top, right, bottom y left en esta posición.
+
+Absolute: Permanecen en la posición de donde fueron colocados pero pierden su espacio físico (se sobreponen a los 
+elementos que ocupan dicho espacio), se los puede posicionar mediante las propiedades top, right, bottom y left.
+Importante: Al aplicar las propiedades top, right, bottom y left se tomará de referencia al contenedor más cercano con posición relativa.
+
+Relative: Conservan su posición original y espacio físico pero se los puede posicionar mediante las propiedades top, right, bottom y left sin perder dicho espacio físico.
+
+Fixed: Pierden su espacio físico y permanecen de forma fija (siguen el scroll, se colocan al lado izquierdo del viewport),
+se los puede posicionar mediante las propiedades de top, right, bottom y left.
+
+Sticky: Conservan su espacio físico pero cuando el scroll los alcanza lo siguen (sin perder dicho espacio físico),
+es muy usado para barras de navegación y se lo puede posicionar con las propiedades top, right, bottom y left.
+*/
+.box-titulo{
+    position: absolute; 
+    background-color: #4a1942;
+    top: -3rem; /*Para los elementos con una posición absoluta (aquellos que tienen la propiedad position: absolute o position: fixed),
+    determina la distancia entre el borde superior del elemento y el borde superior del bloque que lo contiene.
+
+    Para los elementos con una posición relativa (aquellos que tienen la propiedad position: relative),
+    determina el desplazamiento hacia abajo que tendrá el elemento con respecto a su posición normal.*/
+    width: 30rem; /*anchura del elemento*/
+    height: 8rem; /*altura de un elemento.*/
+    border-radius: 2rem;
+    border-style: solid;
+    text-align: center; /*alineación horizontal del texto en un elemento.*/
+}
+
+.box-titulo span{
+    position: relative;
+    top: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold; /*especifica el peso o grueso de la letra.*/
+    font-size: 3.2rem; /*especifica la dimension de la letra*/
+    color: #893168;
+    text-transform: uppercase; /*controla las mayúsculas del texto. (en este caso todo en mayúsculas*/
+    
+}
+
+.box-contenido{
+    position: absolute;
+    background-color: #eaeaea;
+    height: 45rem;
+    width: 80rem;
+    margin-top: 3rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 3rem;
+    border-style: solid;
+    border-radius: 2rem;
+}
+
+figure img{
+    position: absolute;
+    width: 35rem;
+    left: 30%;
+    margin-top: 5%;
+}
+
+.box-contenido p{
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    margin-left: 10rem;
+    margin-right: 10%;
+    margin-top: 40%;
+}
