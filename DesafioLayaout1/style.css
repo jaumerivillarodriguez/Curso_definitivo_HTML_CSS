@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+header{
+    background-color: rgb(24, 92, 73);
+    padding:2.3rem;
+}
+
+.main-nav__item{
+    display: inline-block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.7rem;
+}
+
+.main-nav{
+    text-align: right;
+}
+
+.logo-nav img{
+    width: 10rem;
+    height: auto;
+}
