@@ -8,22 +8,201 @@ html{
     font-size: 62.5%;
 }
 
+body{
+    background-color: rgb(222, 236, 244);
+    
+}
+
 header{
-    background-color: rgb(24, 92, 73);
-    padding:2.3rem;
+    background-color: white;
+    width: 100%;
+    height: 8rem;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
-.main-nav__item{
-    display: inline-block;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.7rem;
-}
-
-.main-nav{
-    text-align: right;
-}
-
-.logo-nav img{
-    width: 10rem;
+/*logo*/
+.logo-nav img{ 
+    width: 11rem;
     height: auto;
+    margin-left:17rem;
+    line-height:8rem ;
+   
+}
+
+/*Nav-menu*/
+.main-nav{ /*ul*/
+    position: relative;
+    list-style: none;
+    left: 30rem;
+    
+}
+
+.main-nav__item{ /*li*/
+    display: inline-block;
+    font-family:Trebuchess,Trebuchet MS,Arial,sans-serif;
+    font-size: 1.7rem;
+    font-style: italic;
+    
+}
+
+
+.main-nav__item a{
+    position: relative;
+    margin: 0 1rem;
+    text-decoration: none;
+    color: black;
+    top: -4.2rem;
+}
+.main-nav__item a:hover{  
+    color:blue;
+}
+
+/*main*/
+.novedades{
+    background-color: white;
+    margin-top: 15rem;
+    width:100%;
+    height: 24rem;
+}
+
+.novedades section{
+    width: 30%;
+    margin-left: 10rem;
+}
+
+.novedades section h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 3.6rem;
+    color: rgb(78, 119, 167); 
+    top:3.5rem;
+}
+.novedades section p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    position: relative;
+    top:4rem;
+}
+
+.separacion{
+    position: relative;
+    left: 50rem;
+    top: -11.5rem;
+    width: 5%;
+    height: 70%;
+
+}
+
+.separacion hr{
+    height: 100%;
+    width: 10%;
+    border-width: 0;
+    border-radius: 4rem;
+    color:rgb(76, 100, 127);
+    background-color:rgb(78, 119, 167); 
+    
+}
+
+.p-novedades{
+    position: absolute;
+    /*background-color:red;*/
+    top:23rem;
+    left:55rem;
+    width: 40%;
+    height:3rem;
+}
+
+.p-novedades p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.6rem;
+    
+}
+
+.novedades button{
+    width: 20rem;
+    height: 4rem;
+    position: absolute;
+    top: 22.6rem;
+    right: 13rem;
+    background-color: rgb(78, 119, 167);
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.6rem;
+    border-radius: 0.5rem;  
+    
+}
+
+.main-central{
+    position: relative;
+    margin: 5rem 0rem;
+    width: 100%;
+    height: 30rem;
+}
+
+
+.juega-ahora{
+    position: absolute;
+    margin-left: 14rem;
+    margin-top: 4rem;
+    width: 18%;
+    height: 25rem;
+    background-color: white;
+    color:  rgb(78, 119, 167);
+    text-align: center;
+}
+
+.eventos-destacados{
+    position: absolute;
+    margin: 0 1.5rem;
+    top: 4rem;
+    right:50rem;
+    width: 35%;
+    height: 25rem;
+    background-color: white;
+    color: rgb(78, 119, 167);
+    text-align: center;
+}
+
+.series{
+    margin-right: 6.4rem;
+    position: absolute;
+    top: 4rem;
+    right:13rem;
+    width: 18%;
+    height: 25rem;
+    background-color: white;
+    color: rgb(78, 119, 167);
+    text-align: center;
+}
+
+footer{
+    background-color: white;
+    width: 100%;
+    height: 30rem;
+    bottom: 0;
+    left: 0;
+}
+
+.main-footer{ /*ul*/
+    list-style: none;
+    left: 30rem;
+    
+}
+
+.main-footer__item{ /*li*/
+    display: inline-block;
+    font-family:Trebuchess,Trebuchet MS,Arial,sans-serif;
+    font-size: 1.7rem;
+    font-style: italic;   
+}
+
+.main-footer__item a{
+    position: relative;
+    margin: 0 9rem;
+    text-decoration: none;
+    color: black;
+    
 }
